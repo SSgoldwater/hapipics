@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   
   get '/oauth/connect', as: :login
   get '/oauth/callback', to: 'oauth#callback'
+  
+  get '/logout', to: 'oauth#logout'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
