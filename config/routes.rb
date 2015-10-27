@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   
   get '/oauth/connect', as: :login
+  get '/oauth/callback', to: 'oauth#callback'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
