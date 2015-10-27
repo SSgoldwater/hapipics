@@ -9,4 +9,9 @@ class OauthController < ApplicationController
     session[:access_token] = response.access_token
     redirect_to root_path
   end
+
+  def logout
+    session.destroy
+    redirect_to root_path
+  end
 end
