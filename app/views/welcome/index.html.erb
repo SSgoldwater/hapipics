@@ -1,1 +1,8 @@
 <h1>Hapipics</h1>
+<% if session[:access_token] %>
+  <p>You are Logged In</p>
+  <%= link_to 'Log out', logout_path %>
+<% else %>
+  <%= link_to 'Login with Instagram', login_path %>
+<% end %>
+
