@@ -1,5 +1,6 @@
-class UserService
+class TwitterService
   attr_reader :connection
+
   def initialize
     @connection = Hurley::Client.new("https://api.instagram.com/v1/")
   end
