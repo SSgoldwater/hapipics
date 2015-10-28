@@ -1,0 +1,25 @@
+div#bg_container {
+  height: 100%;
+  text-align: center;
+}
+
+.splash {
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  color: white;
+  margin-top: 200px;
+  .btn {
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    box-shadow: 5px 5px 20px black;
+    margin: 15px;
+  }
+  h1 {
+    font-size: 100px;
+    text-shadow: 5px 5px 20px black;
+  }
+  p {
+    font-size: 40px;
+    text-shadow: 5px 5px 10px black;
+  }
+}
