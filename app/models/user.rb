@@ -1,6 +1,6 @@
 class User < OpenStruct
   def self.service
-    @service ||= UserService.new
+    @service ||= TwitterService.new
   end
 
   def self.find(id, token)
