@@ -4,6 +4,6 @@ feature 'splashpage' do
   scenario 'user sees splashpage' do
     visit root_path
 
-    expect(page).to have_text('Hapipics')
+    expect(page).to have_text('HapiPics')
   end
 end
