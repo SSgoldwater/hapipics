@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @user = session[:user]
+    token = session[:access_token]
+    @user = User.find('self', token).data
   end
 end
