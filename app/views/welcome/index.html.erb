@@ -1,13 +1,10 @@
 <div id="bg_container">
-<div class="splash text-center">
-  <h1>Hapipics</h1>
-  <%= link_to 'Login with Instagram', login_path %>
-</div>
+  <div class="splash text-center">
+    <h1>HapiPics</h1>
+    <%= link_to 'Login with Instagram', login_path, class: "btn btn-default hidden" %>
+    <p>We put the 'api' in hapi</p>
+  </div>
 </div>
 
 <%= javascript_include_tag "jquery.tubular.1.0.js" %>
-<script>
-  $(document).ready(function() {
-    $('.container').tubular({videoId: 'Yqm-eb56x-Q', start: 10})
-  });
-</script>
+<%= javascript_include_tag "splash.js" %>
