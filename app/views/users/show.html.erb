@@ -13,7 +13,5 @@
 <% end %>
 <%= link_to 'Log out', logout_path %><br>
 <div class="feed col-md-8 col-md-offset-2">
-  <% @feed.each do |post|  %>
-    <%= image_tag post[:images][:standard_resolution][:url] %>
-  <% end %>
+  <%= render partial: "post", collection: @feed  %>
 </div>
