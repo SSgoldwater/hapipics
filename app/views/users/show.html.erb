@@ -1,6 +1,8 @@
-<h1><%= "Hello #{@user[:username]}" %></h1>
-<%= link_to 'Log out', logout_path %><br>
-<%= image_tag @user[:profile_picture] %><br>
+<div class="profile_pic col-md-2 pull-right">
+  <%= image_tag @user[:profile_picture] %><br>
+</div>
+<div>
+<h3><%= @user[:username] %></h3>
 <%= @user[:id] %><br>
 <%= @user[:full_name] %><br>
 <%= @user[:bio] %><br>
@@ -9,3 +11,9 @@
   <%= count %>
   <br>
 <% end %>
+<%= link_to 'Log out', logout_path %><br>
+<div class="feed col-md-8 col-md-offset-2">
+  <% @feed.each do |post|  %>
+    <%= image_tag post[:images][:standard_resolution][:url] %>
+  <% end %>
+</div>
