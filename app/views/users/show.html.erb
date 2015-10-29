@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <h1 class = "logito pull-left hidden shrunk-nav">HapiPics</h1>
-  <h3 class = "username pull-right hidden shrunk-nav"><%= @user[:username] %></h3>
+  <h3 class = "username pull-right hidden shrunk-nav"><%= @user.username %></h3>
 
   <div class="full-nav col-md-2 full-nav">
     <h1 class = "logo">HapiPics</h1>
@@ -9,33 +9,33 @@
   </div>
 
   <div class="profile-pic col-md-2 pull-right full-nav">
-    <%= image_tag @user[:profile_picture] %><br>
+    <%= image_tag @user.profile_picture %><br>
   </div>
   
   <div class = "profile-counts col-md-2 pull-right full-nav">
     <table class="counts pull-right">
-      <h4 class = "text-right"><%= @user[:full_name] %></h4>
+      <h4 class = "text-right"><%= @user.full_name %></h4>
       <tbody class = "pull-right">
 	<tr>
 	  <td><h5>Posts</h5></td>
-	  <td><%= @user[:counts][:media] %></td>
+	  <td><%= @user.posts %></td>
 	</tr>
 	<tr>
 	  <td><h5>Followers</h5></td>
-	  <td><%= @user[:counts][:follows] %></td>
+	  <td><%= @user.followers %></td>
 	</tr>
 	<tr>
 	  <td><h5>Following</h5></td>
-	  <td><%= @user[:counts][:followed_by] %></td>
+	  <td><%= @user.following %></td>
 	</tr>
       </tbody>
     </table>
   </div>
   
   <div class="profile-info col-md-6 pull-right full-nav">
-    <h3><%= @user[:username] %></h3><br>
+    <h3><%= @user.username %></h3><br>
     <div class = "bio"> 
-      <p><%= @user[:bio] %></p><br>
+      <p><%= @user.bio %></p><br>
     </div>
   </div>
 </nav>

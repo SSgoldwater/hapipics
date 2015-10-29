@@ -21,7 +21,7 @@ def stub_omniauth
       username: "3y35",
     }, 
     credentials: {
-      token: "694953e0061a4cc7b93887541f6af5b9",
+      token: ENV['instagram_client_id'],
       secret: "0b23dc57822f49ad96944b0a677bdc5a",
     }
   })
