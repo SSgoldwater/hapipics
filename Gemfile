@@ -14,6 +14,7 @@ gem 'oauth'
 gem 'instagram'
 gem 'figaro'
 gem 'hurley'
+gem 'simplecov'
 
 group :development, :test do
   gem 'pry'
