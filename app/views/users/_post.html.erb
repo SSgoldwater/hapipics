@@ -1,24 +1,25 @@
 <div class="post">
   <div class="post-header">
     <div class="mini-profile-pic pull-left">
-      <%= image_tag post[:user][:profile_picture] %>
+      <%= image_tag post.poster_pic %>
     </div>
-    <h4 class = "pull-left"><%= post[:user][:username] %></h4> 
+    <h4 class = "pull-left"><%= post.poster_name %></h4> 
   </div>
   <div class = "pic-wrapper">
-    <%= image_tag post[:images][:standard_resolution][:url] %>
+    <%= image_tag post.image %>
   </div>
   <div class = "caption">
-    <%= post[:caption][:text] %>
+    <%= post.post_caption %>
   </div>
   <div class = "likes">
-    <%= "#{post[:likes][:count]} likes" %>
+    <%= "#{post.like_count} likes" %>
   </div>
   <div class="comments">
     <h5>
       <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
       Comments
-      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></h5>
+      <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+    </h5>
     <% @comments = post[:comments][:data] %>
     <div class = "comments-contents">
       <%= render partial: "comment", collection: @comments %> 

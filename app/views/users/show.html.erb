@@ -32,7 +32,6 @@
     </table>
   </div>
   
-
   <div class="profile-info col-md-6 pull-right full-nav">
     <h3><%= @user[:username] %></h3><br>
     <div class = "bio"> 
@@ -43,6 +42,6 @@
   
 <div class="container">
   <div class="feed col-md-8 col-md-offset-2">
-    <%= render partial: "post", collection: @feed  %>
+    <%= render partial: "post", collection: @posts  %>
   </div>
 </div>
