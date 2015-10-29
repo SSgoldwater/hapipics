@@ -17,8 +17,7 @@ class TwitterService
     parse(connection.get("users/#{id}/media/recent/?access_token=#{token}"))
   end
 
-  def hapi_tag_feed(token)
-    tag = ["sunrise", "sunset", "cats"].sample
+  def hapi_tag_feed(tag, token)
     parse(connection.get("tags/#{tag}/media/recent?access_token=#{token}"))
   end
   
