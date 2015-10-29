@@ -42,13 +42,18 @@
 
  
 <div class="container">
-  <div class="user-current-feed col-md-8 col-md-offset-2">
+  <div class="feed user-current-feed col-md-8 col-md-offset-2">
     <%= render partial: "post", collection: @posts  %>
   </div>
-  <div class="user-media hidden col-md-8 col-md-offset-2">
+  <div class="feed user-media hidden col-md-8 col-md-offset-2">
     <%= render partial: "post", collection: @user_media  %>
+  </div>
+  <div class="feed hapi-feed hidden col-md-8 col-md-offset-2">
+    <%= render partial: "post", collection: @hapi_tag_feed  %>
   </div>
   <h3 class = "btn feed-selector current active">Current Feed</h3>
   <h3 class = "btn feed-selector media">My Media</h3>
+  <h3 class = "btn feed-selector hapi-tag-feed">Hapi Tag</h3>
+  
 </div>
 

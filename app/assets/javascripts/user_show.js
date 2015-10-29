@@ -18,15 +18,22 @@ $(document).ready(function() {
   
   $('.feed-selector.current').on('click', function() {
     $('.feed-selector').removeClass('active');
+    $('.feed').addClass('hidden');
     $('.user-current-feed').removeClass('hidden');
-    $('.user-media').addClass('hidden');
     $(this).addClass('active');
   });
 
   $('.feed-selector.media').on('click', function() {
     $('.feed-selector').removeClass('active');
+    $('.feed').addClass('hidden');
     $('.user-media').removeClass('hidden');
-    $('.user-current-feed').addClass('hidden');
+    $(this).addClass('active');
+  });
+
+  $('.feed-selector.hapi-tag-feed').on('click', function() {
+    $('.feed-selector').removeClass('active');
+    $('.feed').addClass('hidden');
+    $('.hapi-feed').removeClass('hidden');
     $(this).addClass('active');
   });
 
