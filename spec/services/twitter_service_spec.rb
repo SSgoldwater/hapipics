@@ -20,4 +20,12 @@ RSpec.describe "twitter service" do
       expect(user_feed[:data]).to be_an(Array)
     end
   end   
+
+  it "gives a users media" do
+    VCR.use_cassette("twitterservice#user_media") do
+      user_media = @service.user_media('self', ENV['token'])
+
+      expect(user_media[:data]).to be_an(Array)
+    end
+  end
 end
