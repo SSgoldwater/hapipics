@@ -1,0 +1,151 @@
+html, body {
+}
+
+.container {
+  padding-top: 180px;
+}
+
+
+nav {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 5px 10px;
+  border: 5px solid #3F2DB5 !important;
+}
+
+.shrink {
+  height: 60px;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+  margin-top: 40px;
+}
+
+.logito {
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  margin-top: 5px !important;
+  margin-bottom: 0px !important;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.username {
+  display: inline-block;
+  font-family: 'Lobster', cursive;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.username.shrunk-nav {
+  margin-top: 10px;
+}
+
+.bio {
+  border-radius: 5px;
+}
+
+.profile-pic {
+  padding: 10px;
+  img {
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px black;
+  }
+}
+
+.profile-counts {
+  display: block;
+  h4 {
+    margin: 25px 0px;
+  }
+  h5 {
+    margin: 0px 20px;
+  }
+}
+
+.profile-info {
+  padding-left: 40px !important;
+  padding-right: 0px !important;
+  h3 {
+    font-family: 'Lobster', cursive;
+    margin-bottom: 0px;
+    margin-top: 25px;
+  }
+  p {
+    font-size: 17px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+}
+
+.counts {
+  width: 100%;
+}
+
+.post {
+  background-color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 15px black;
+  .mini-profile-pic {
+    height: 30px;
+    width: 30px;
+    img {
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+  .post-header {
+    font-family: 'Lobster', cursive;
+    display: inline-block;
+    margin: 10px 0px 0px 10px;
+    h4 { 
+      margin-top: 5px;
+      padding-left: 10px;
+    }
+  }
+  .pic-wrapper {
+    img {
+      box-shadow: 0px 3px 7px black;
+      border-radius: 5px;
+      width: 97.41%;
+      margin: 10px;
+    }
+  }
+  .caption {
+   padding: 10px;
+  } 
+  .likes {
+    text-align: center
+  }
+
+    .likes {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 5px;
+  }
+  .comments{
+    display: block;
+    h5 { 
+      text-align: center;
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+    .comment {
+      height: auto;
+      margin: 5px 0px;
+      padding-left: 15px;
+    }
+    .comment-from {
+      display: inline-block;
+    }
+    .comment-text {
+      display: inline-block;
+    }
+      
+  }
+}
