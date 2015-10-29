@@ -39,9 +39,16 @@
     </div>
   </div>
 </nav>
-  
+
+ 
 <div class="container">
-  <div class="feed col-md-8 col-md-offset-2">
+  <div class="user-current-feed col-md-8 col-md-offset-2">
     <%= render partial: "post", collection: @posts  %>
   </div>
+  <div class="user-media hidden col-md-8 col-md-offset-2">
+    <%= render partial: "post", collection: @user_media  %>
+  </div>
+  <h3 class = "btn feed-selector current active">Current Feed</h3>
+  <h3 class = "btn feed-selector media">My Media</h3>
 </div>
+

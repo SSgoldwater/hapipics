@@ -117,30 +117,34 @@ nav {
     }
   }
   .caption {
-   padding: 10px;
+    padding: 10px;
   } 
   .likes {
-    text-align: center
-  }
-
-    .likes {
     border-bottom: 1px solid black;
+    text-align: center;
     border-top: 1px solid black;
     padding: 5px;
   }
   .comments{
     display: block;
+    text-align: center;
+    .btn {
+      font-size: 17px;
+      border: 1px solid black;
+    }
     h5 { 
       text-align: center;
       padding-left: 10px;
       margin-bottom: 10px;
     }
     .comment {
+      text-align: left;
       height: auto;
       margin: 5px 0px;
       padding-left: 15px;
     }
     .comment-from {
+      font-size: 20px;
       display: inline-block;
     }
     .comment-text {
@@ -148,4 +152,15 @@ nav {
     }
       
   }
+}
+
+.feed-selector.btn {
+  position: fixed;
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px;
+  width: 140px;
+}
+
+.media {
+  top: 230px;
 }
