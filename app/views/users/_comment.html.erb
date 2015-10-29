@@ -1,3 +1,8 @@
-<%= "#{comment[:from][:username]}:" %>
-<%= comment[:text] %>
-<br>
+<div class = "comment hidden">
+  <p class = "comment-from">
+    <%= "#{comment[:from][:username]}:" %>
+  </p>
+  <p class = "comment-text">
+    <%= comment[:text] %>
+  </p>
+</div>
