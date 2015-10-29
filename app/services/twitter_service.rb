@@ -13,6 +13,10 @@ class TwitterService
     parse(connection.get("users/#{id}/feed?access_token=#{token}"))
   end
   
+  def user_media(id, token)
+    parse(connection.get("users/#{id}/media/recent/?access_token=#{token}"))
+  end
+  
   def parse(response)
     JSON.parse(response.body, symbolize_names: true)
   end
