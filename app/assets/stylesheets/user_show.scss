@@ -155,16 +155,30 @@ nav {
 }
 
 .feed-selector.btn {
-  position: fixed;
+  position: relative;
   border: 1px solid black;
   box-shadow: 2px 2px 5px;
-  width: 140px;
+  width: 100%;
 }
 
-.media {
-  top: 230px;
+@media (min-width: 970px) { 
+  .feed-selector.btn {
+    position: fixed !important;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px;
+    width: 140px;
+  }
+
+  .current { 
+    top: 180px;
+  }
+
+  .media {
+    top: 230px;
+  }
+
+  .hapi-tag-feed {
+    top: 270px;
+  }
 }
 
-.hapi-tag-feed {
-  top: 270px;
-}
