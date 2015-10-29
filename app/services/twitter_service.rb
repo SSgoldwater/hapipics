@@ -16,6 +16,11 @@ class TwitterService
   def user_media(id, token)
     parse(connection.get("users/#{id}/media/recent/?access_token=#{token}"))
   end
+
+  def hapi_tag_feed(token)
+    tag = ["sunrise", "sunset", "cats"].sample
+    parse(connection.get("tags/#{tag}/media/recent?access_token=#{token}"))
+  end
   
   def parse(response)
     JSON.parse(response.body, symbolize_names: true)

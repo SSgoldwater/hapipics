@@ -4,5 +4,6 @@ class UsersController < ApplicationController
     @user = User.find('self', token)
     @posts = UserFeed.find('self', token).data.map! { |post| Post.new(post) }
     @user_media = UserMedia.find('self', token).data.map! { |post| Post.new(post) }
+    @hapi_tag_feed = HapiTagFeed.find(token).data.map! { |post| Post.new(post) }
   end
 end
