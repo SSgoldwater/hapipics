@@ -4,10 +4,16 @@ $(document).ready(function() {
       $('nav').addClass('shrink');
       $('.full-nav').addClass('hidden');
       $('.shrunk-nav').removeClass('hidden');
+      $('.current').css("top", "70px");
+      $('.media').css("top", "120px");
+      $('.hapi-tag-feed').css("top", "160px");
     } else {
       $('nav').removeClass('shrink');
       $('.full-nav').removeClass('hidden');
       $('.shrunk-nav').addClass('hidden');
+      $('.current').css("top", "180px");
+      $('.media').css("top", "230px");
+      $('.hapi-tag-feed').css("top", "270px");
     }
   });
 
