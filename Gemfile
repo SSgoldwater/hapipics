@@ -15,7 +15,6 @@ gem 'instagram'
 gem 'figaro'
 gem 'hurley'
 gem 'simplecov'
-gem "unicorn-rails"
 
 group :development, :test do
   gem 'pry'
