@@ -1,28 +1,7 @@
-== README
+== ReadMe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was a three day project for The Turing School, demonstrating API consumption.
 
-Things you may want to cover:
+I would like to highlight the extra attention ive paid to design and UI, given the alloted time to implement a conceptually new backend involving the API
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
