@@ -3,5 +3,3 @@
 This was a three day project for The Turing School, demonstrating API consumption.
 
 I would like to highlight the extra attention ive paid to design and UI, given the alloted time to implement a conceptually new backend involving the API.
-
-<tt>rake doc:app</tt>.
