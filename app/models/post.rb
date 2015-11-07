@@ -13,7 +13,11 @@ class Post < OpenStruct
   end
   
   def post_caption
-    self.caption[:text]
+    if self.caption 
+      self.caption[:text] 
+    else
+      ""
+    end
   end
 
   def like_count
