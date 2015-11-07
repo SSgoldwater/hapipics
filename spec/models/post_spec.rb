@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Post, type: :model do 
   before(:each) do
     VCR.use_cassette("get_posts_from_user_feed") do
-      @posts = UserFeed.find('self', ENV['token']).data.map! { |post| Post.new(post) }
+      @posts = UserFeed.find('self', ENV['token'])
       @post = @posts.first
     end
   end
