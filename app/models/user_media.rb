@@ -5,7 +5,7 @@ class UserMedia < OpenStruct
   end
 
   def self.find(id, token)
-    UserMedia.new(service.user_media(id, token))
+    UserMedia.new(service.user_media(id, token)).data.map! { |post| Post.new(post) }
   end
 
 end

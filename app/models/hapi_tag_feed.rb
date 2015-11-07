@@ -6,7 +6,7 @@ class HapiTagFeed < OpenStruct
   
   def self.find(token)
     tag = ["sunrise", "sunset", "cats", "kittens", "foodporn", "beautiful", "happy", "earthporn", "love"].sample
-    HapiTagFeed.new(service.hapi_tag_feed(tag, token))
+    HapiTagFeed.new(service.hapi_tag_feed(tag, token)).data.map! { |post| Post.new(post) }
   end
 
 end
